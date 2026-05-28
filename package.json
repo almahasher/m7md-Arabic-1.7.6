@@ -1,0 +1,26 @@
+{
+  "name": "stremio-enterprise-subtitles",
+  "version": "1.7.6",
+  "type": "module",
+  "private": true,
+  "description": "Fast Stremio Arabic subtitle add-on with server-side encoding normalization, smart filtering, and optional DeepSeek fallback.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "start:cluster": "node src/cluster.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --experimental-test-module-mocks --test src/tests/*.test.js"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "cors": "^2.8.6",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "morgan": "^1.10.0",
+    "undici": "^7.25.0"
+  }
+}
